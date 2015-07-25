@@ -1,0 +1,141 @@
+body {
+  background-color: #000; 
+  min-width: 700px;
+}
+
+.jumbotron {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.jumbotron img {
+  height: auto;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+img.flight-type {
+  width: 40px;
+  height: 40px;
+}
+
+img.logo {
+  width: 80%;
+  height: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+#main {
+  background: #fff;
+  font-family: 'Arial';
+  margin: 0px auto;
+  border-collapse: collapse;
+  width: 86%;
+  margin-left: 7%;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3), 0px 10px 20px rgba(255, 255, 255, 0.15), 0px 20px 20px rgba(255, 255, 255, 0.15), 0px 30px 20px rgba(255, 255, 255, 0.15);
+}
+#main tr {
+  height: 35px;
+  text-align: left;
+}
+#main tr:nth-child(odd) {
+  background: rgba(165, 165, 165, 0.4);
+}
+#main tr:nth-child(odd) td.hover {
+  /*background: rgba(0, 0, 0, 0.222) !important;*/
+}
+#main tr td:nth-child(1) {
+  width: 40px;
+}
+#main th, #main td {
+  color: #999;
+  border: 0px;
+  padding: 0;
+  border-collapse: collapse;
+}
+#main td.hover {
+  background: rgba(255, 165, 0, 0.5);
+  color: #fff;
+}
+#main td.logo, #main th.logo {
+  width: 100px;
+}
+#main td.aircraft, #main th.aircraft {
+  min-width: 80px;
+}
+#main td.info {
+  display: none;
+}
+#main th {
+  background: rgb(255, 165, 0);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+#main th.last {
+  border-right: none;
+}
+#main th.sticky {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  top: 0px;
+}
+
+table.buttons {
+  color: #fff;
+  background: #ccc;
+  margin-left: 7%;
+  border-collapse: collapse;
+}
+
+#arrive, #depart {
+  border-right: 2px solid #aaa;
+}
+
+table.buttons table, table.buttons img, table.buttons h4 {
+  background: inherit;
+  padding: 0px;
+  margin: 0px;
+}
+
+table.buttons tr {
+  background: inherit;
+}
+
+table.buttons td {
+  background: inherit;
+  vertical-align: center;
+  text-align: center;
+  margin: 0px;
+  width: 100px;
+}
+
+.active {
+  background: rgb(255, 165, 0) !important;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .airline {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .note {
+        display: none;
+    }
+}
