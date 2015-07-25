@@ -50,8 +50,8 @@ var process;
 
 var dialog = function (handle) {
     var query = prompt("Please enter country or city name");
-    if (query === null)
-        return
+    if (query === null || query === '')
+        return;
     handle(query);
 };
 
