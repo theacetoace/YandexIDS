@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="player.css" />
+	  <script src="jQuery.min.js"></script>
+	  <meta charset="utf-8">
+	  <script type="text/javascript" src="id3.min.js"></script>
+	  <script type="text/javascript" src="player.js"></script>
+	  <title>Web Audio Api Player</title>
+	</head>
+	<body>
+	  <div class="player">
+	    <div class="row top-player">
+	      <div class="col-md-1"></div>
+	      <div class="controls row col-md-1">
+	        <div class="add col-md-6">
+	      	  <form>
+	      		<input id="audio_file" type="file" accept="audio/*" style="display: none;" multiple />
+	      	  </form>
+	      	  <button class="button" id="back_audio_file"><span class="glyphicon glyphicon-plus"></span></button>
+	        </div>
+	        <button class="button col-md-6" id="play"><span class="glyphicon glyphicon-play"></span></button>
+	      </div>
+	      <div class="col-md-1"></div>
+	      <div class="col-md-5 message-store">
+	        <span class="message"></span> <span class="artist"></span>
+	      </div>
+	      <div class="row col-md-4">
+	        <button id="pop" class="eq button col-md-2">Pop</button>
+	        <button id="rock" class="eq button col-md-2">Rock</button>
+	        <button id="jazz" class="eq button col-md-2">Jazz</button>
+	        <button id="classic" class="eq button col-md-2">Classic</button>
+	        <button id="normal" class="eq button col-md-2 eqactive">Normal</button>
+	      </div>
+		</div>
+		<div class="row">
+		  <div class="track col-md-12">
+            <div class="progress"></div>
+            <div class="scrubber"></div>
+          </div>
+        </div>
+        <div class="row bottom-player" style="height: 100%;">
+	      <canvas id="myCanvas" class="col-md-9" style="border:1px solid #000000; height: 600px;"></canvas>
+	      <div class="dragndrop col-md-3">Drag'n'Drop</div>
+	    </div>
+	  </div>
+	</body>
+</html>

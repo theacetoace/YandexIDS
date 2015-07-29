@@ -1,0 +1,117 @@
+/* {
+  box-sizing: border-box;
+}*/
+
+.player {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.top-player {
+  background: #333;
+  height: 100%;
+}
+
+.message-store {
+  padding-top: 10px;
+  text-align: left;
+}
+
+.message, .artist {
+  height: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  background: transparent;
+  color: #fff;
+}
+
+.artist {
+  height: 18px;
+  color: #ccc;
+}
+
+.controls {
+  background: #333;
+  padding: 8px;
+}
+
+.button {
+  color: white;
+  /*width: 20px;*/
+  height: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.eq {
+  text-align: left;
+  min-width: 70px;
+  padding-top: 8px;
+  padding-bottom: 13px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 10px;
+}
+
+.eqactive {
+  background: rgba(128, 128, 128, 0.3);
+}
+
+.track {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  border: 1px solid #666;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.progress {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #f00;
+  border-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.scrubber {
+  position: absolute;
+  width: 18px;
+  height: 15px;
+  margin-top: -3px;
+  /*border-radius: 50%;*/
+  background: #f00;
+  border: solid 1px #ddd;
+  cursor: pointer;
+  box-shadow: 0 0 1px #000, inset 0 0 1px #400;
+  opacity: 0;
+}
+
+.scrubber:hover {
+  opacity: 0.5;
+}
+
+#back_audio_file {
+  color: white;
+  width: 20px;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.dragndrop {
+  border:2px dotted #0B85A1;
+  color:#92AAB0;
+  font-size: 30px;
+  text-align:center;
+  height: 600px;
+  padding-top: 300px;
+}
