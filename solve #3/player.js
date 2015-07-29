@@ -281,7 +281,7 @@ Player.prototype.decode = function( arrayBuffer ) {
     this.artist.html(use_artist);
     this.buffer = audioBuffer;
     this.draw();
-    this.play();
+    this.play(0);
   }.bind(this));
 
 };
